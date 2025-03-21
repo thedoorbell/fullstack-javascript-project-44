@@ -7,3 +7,7 @@
 ### brain-even demo run
 
 <https://asciinema.org/a/ZntwsT77oad1MUb89B83IQqdT>
+
+### brain-calc demo run
+
+<https://asciinema.org/a/TNtcu8r12ZyfsE9b1UGn45JZL>
