@@ -15,3 +15,7 @@
 ### brain-gcd demo run
 
 <https://asciinema.org/a/8BwBf9NXrmHYz8WeA9PxtH6cG>
+
+### brain-progression demo run
+
+<https://asciinema.org/a/LdlB7cfOqpX71kSFGGC6Vn8fq>
