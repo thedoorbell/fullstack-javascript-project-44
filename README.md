@@ -11,3 +11,7 @@
 ### brain-calc demo run
 
 <https://asciinema.org/a/TNtcu8r12ZyfsE9b1UGn45JZL>
+
+### brain-gcd demo run
+
+<https://asciinema.org/a/8BwBf9NXrmHYz8WeA9PxtH6cG>
