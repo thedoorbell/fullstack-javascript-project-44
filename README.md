@@ -19,3 +19,7 @@
 ### brain-progression demo run
 
 <https://asciinema.org/a/LdlB7cfOqpX71kSFGGC6Vn8fq>
+
+### brain-prime demo run
+
+<https://asciinema.org/a/rONeKqBMfSAkx1LnrGsDaOrSk>
