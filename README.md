@@ -1,8 +1,10 @@
-### Hexlet tests and linter status:
+### README
 
-[![Actions Status](https://github.com/thedoorbell/fullstack-javascript-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/thedoorbell/fullstack-javascript-project-44/actions)
+"Brain Games" - is a set of five console games based on the principle of popular mobile applications for brain training.
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/df7e831b6780077b35d8/maintainability)](https://codeclimate.com/github/thedoorbell/fullstack-javascript-project-44/maintainability)
+## Minimum requirements:
+
+Linux, MacOS or Windows (WLS)
 
 ### brain-even demo run
 
@@ -23,3 +25,9 @@
 ### brain-prime demo run
 
 <https://asciinema.org/a/rONeKqBMfSAkx1LnrGsDaOrSk>
+
+### Hexlet tests and linter status:
+
+[![Actions Status](https://github.com/thedoorbell/fullstack-javascript-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/thedoorbell/fullstack-javascript-project-44/actions)
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/df7e831b6780077b35d8/maintainability)](https://codeclimate.com/github/thedoorbell/fullstack-javascript-project-44/maintainability)

@@ -7,7 +7,7 @@ const playGame = (rules, game) => {
 
   for (let gameRound = 1; gameRound <= 3; gameRound += 1) {
     const [question, correctAnswer] = game();
-    console.log('Question: ', question);
+    console.log('Question:', question);
     const answer = readlineSync.question('Your answer: ');
 
     if (answer === correctAnswer) {
