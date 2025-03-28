@@ -1,11 +1,10 @@
-import playGame from '../index.js';
+import playGame, { getRandomNum } from '../index.js';
 
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const askIfPrime = () => {
-  const num = Math.floor(Math.random() * 100) + 1;
+const isPrime = (num) => {
   let divisors = 1;
-  let correctAnswer = '';
+  let result = '';
 
   for (let i = 2; i <= num; i += 1) {
     if (num % i === 0) {
@@ -15,9 +14,16 @@ const askIfPrime = () => {
       }
     }
   }
-  correctAnswer = divisors === 2 ? 'yes' : 'no';
+  result = divisors === 2 ? 'yes' : 'no';
+
+  return result;
+};
+
+const getGameData = () => {
+  const num = getRandomNum(100) + 1;
+  const correctAnswer = isPrime(num);
 
   return [num, correctAnswer];
 };
 
-export default () => playGame(rules, askIfPrime);
+export default () => playGame(rules, getGameData);

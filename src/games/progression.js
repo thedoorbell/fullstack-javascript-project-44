@@ -1,10 +1,10 @@
-import playGame from '../index.js';
+import playGame, { getRandomNum } from '../index.js';
 
 const rules = 'What number is missing in the progression?';
 
-const findNumberInProgression = () => {
-  const increasedBy = Math.floor(Math.random() * 10) + 1;
-  let progressionNumber = Math.floor(Math.random() * 50);
+const getProgression = () => {
+  const increasedBy = getRandomNum(10) + 1;
+  let progressionNumber = getRandomNum(50);
   const progression = [progressionNumber];
 
   for (let i = 1; i < 10; i += 1) {
@@ -12,11 +12,16 @@ const findNumberInProgression = () => {
     progression.push(progressionNumber);
   }
 
-  const position = Math.floor(Math.random() * 10);
+  return progression;
+};
+
+const getGameData = () => {
+  const progression = getProgression();
+  const position = getRandomNum(10);
   const correctAnswer = progression[position];
   progression[position] = '..';
 
   return [progression.join(' '), String(correctAnswer)];
 };
 
-export default () => playGame(rules, findNumberInProgression);
+export default () => playGame(rules, getGameData);

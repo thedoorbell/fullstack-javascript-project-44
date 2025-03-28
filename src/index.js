@@ -1,8 +1,15 @@
 import readlineSync from 'readline-sync';
-import getName from './cli.js';
 
-const playGame = (rules, game) => {
-  const name = getName();
+export const getRandomNum = (x) => {
+  const num = Math.floor(Math.random() * x);
+
+  return num;
+};
+
+export default (rules, game) => {
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}!`);
   console.log(rules);
 
   for (let gameRound = 1; gameRound <= 3; gameRound += 1) {
@@ -22,5 +29,3 @@ const playGame = (rules, game) => {
     }
   }
 };
-
-export default playGame;

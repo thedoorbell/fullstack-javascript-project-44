@@ -1,11 +1,14 @@
-import playGame from '../index.js';
+import playGame, { getRandomNum } from '../index.js';
 
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const askIsEven = () => {
-  const evenNum = Math.floor(Math.random() * 100) + 1;
-  const correctAnswer = evenNum % 2 === 0 ? 'yes' : 'no';
-  return [evenNum, correctAnswer];
+const isEven = (num) => num % 2 === 0;
+
+const getGameData = () => {
+  const num = getRandomNum(100) + 1;
+  const correctAnswer = isEven(num) ? 'yes' : 'no';
+
+  return [num, correctAnswer];
 };
 
-export default () => playGame(rules, askIsEven);
+export default () => playGame(rules, getGameData);
